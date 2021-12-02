@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/design.css">
+
+    <title>Coffee M&M</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<style>
+    body {
+        background-image: url(./image/osen-listia-fon-derevo-kofe-colorful-kruzhka-chashka-vintage.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+</style>
+
+<body>
+
+    <nav id="navbar">
+        <div id="navbar1">
+            <div class="logo" >
+                <a href="index.html"><img src="image/coffee-5588945_960_720.png" width="165px" title="Home"></a>
+            </div>
+
+            <ul>
+                <li> <a href="#"> Wish List(0)</a></li>
+                <li><a href="#">Checkout </a></li>
+                <li><a href="REGISTAR.HTML">MyAcount</a></li>
+            </ul>
+        </div>
+        <div id="navbar2">
+            <form action="index.html">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search" style="color: white;"></i></button>
+            </form>
+        </div>
+        <div id="navbar3">
+            <a href="#"> ESPRESSO </a>
+            <a href="#">CAPPUCCINO </a>
+            <a href="#">FRAPPE</a>
+            <a href="#">ICE COFFEE</a>
+        </div>
+
+    </nav>
+
+    <!-- ----------------------------------------------signup------------------------------------------------------------------------------>
+
+
+
+    <section class="container2">
+        <ul id="ul">
+            <li id="btn1">
+                Sign Up
+            </li>
+            <li id="btn2" style="opacity:0.5;">
+                Log In
+            </li>
+        </ul>
+
+        <div>
+            <form action="index.html" id="signup">
+                <h1>Sign Up</h1>
+                <div class="row clearfix">
+                    <input type="text" name="usrname" placeholder=" FirstName" autocomplete="off" id="inpName1" />
+                    <input type="text" name="usrname" placeholder=" LastName" autocomplete="off" id="inpName2" />
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder=" Email" autocomplete="off" id="email" />
+                </div>
+                <div class="input_field">
+                    <input type="password" name="password" placeholder=" Password " id="password" />
+                </div>
+
+                <div class="input_field">
+                    <input type="text" name="phone" placeholder=" PhoneNumber" class="input_field2" autocomplete="off"
+                        id="phone" />
+                </div>
+                <div class="input_field checkbox_option">
+                    <input type="checkbox" id="cb1">
+                    <label for="cb1" class="radio">I agree with terms and conditions</label>
+                </div>
+
+                <input class="button" id="btsignup" type="submit" value="Register" onclick="saveinstorage()" />
+            </form>
+        </div>
+
+
+        <div>
+            <form action="index.html" id="login">
+                <h1>Log In</h1>
+
+
+                <div>
+                    <input type="email" name="email" placeholder=" Email" autocomplete="off" id="email1" />
+                </div>
+
+
+                <div class="input_field">
+                    <input type="password" name="password" placeholder=" Password" id="password1" />
+                </div>
+                <span id="pPassword1"></span>
+
+                <span id="pname2"></span>
+
+                <input class="button" type="submit" value="Log In" />
+            </form>
+        </div>
+    </section>
+
+    <!-- -------------------------------------------foteer------------------------------------------------------>
+    <footer id="footer" style="margin-top: 80px;">
+
+        <span><a href="#navbar"><i class="fas fa-chevron-up"></i></a></span>
+        <div class="contact">
+            <h3>Cintact Us in
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href-="#"><i class="fab fa-youtube"></i></a>
+            </h3>
+            <p>We hope you enjoy and melt in our coffee</p>
+        </div>
+        <i class="fas fa-mug-hot"></i>
+        <i class="fas fa-mug-hot"></i>
+        <i class="fas fa-mug-hot"></i>
+        <i class="fas fa-mug-hot"></i>
+        <br>
+        <span>CoffeeM&M&copy; CopyRight 2021 ITI</span>
+        </div>
+    </footer>
+
+
+
+    <script>
+        let sign = document.querySelector("#btn1");
+        let login = document.querySelector("#btn2");
+        sign.addEventListener("click", active)
+        login.addEventListener("click", active1)
+        /*************design form*************** */
+        function active() {
+            document.getElementById("login").style.display = "none";
+            document.getElementById("signup").style.display = "block";
+            document.getElementById("btn2").style.opacity = "0.5"
+            this.style.opacity = "1"
+        }
+
+        function active1() {
+            document.getElementById("signup").style.display = "none";
+            document.getElementById("login").style.display = "block";
+            document.getElementById("btn1").style.opacity = "0.5"
+            this.style.opacity = "1"
+        }
+    </script>
+
+
+
+</body>
+
+</html>
